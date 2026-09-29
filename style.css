@@ -1,0 +1,63 @@
+:root{
+  --bg:#eef7f6; --ink:#10283a; --muted:#4b6472; --aqua:#bfe6e4; --blue:#2b59c3; --sun:#f2c94c; --leaf:#1f7a4d; --card:#ffffff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1c26; --ink:#eaf6f5; --muted:#9db6c0; --aqua:#1c3b48; --card:#152a36; --blue:#8fb0ff}}
+:root[data-theme="dark"]{--bg:#0e1c26; --ink:#eaf6f5; --muted:#9db6c0; --aqua:#1c3b48; --card:#152a36; --blue:#8fb0ff}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.7 Figtree,system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.05;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:2px solid var(--aqua)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--bg);font:800 1.1rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+
+.hero{padding:40px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(3.2rem,9vw,6.4rem);font-weight:800;letter-spacing:-.03em}
+.hero h3{margin-top:18px;font-size:clamp(1.2rem,2.6vw,1.6rem);font-weight:500;color:var(--muted)}
+.btn{display:inline-block;margin-top:28px;padding:14px 28px;border-radius:99px;background:var(--ink);color:var(--bg);font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn:hover{background:var(--sun);color:#10283a;border-color:var(--sun)}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0 0;padding:0;list-style:none}
+.socials a{display:grid;place-items:center;width:44px;height:44px;border:2px solid var(--ink);border-radius:50%;text-decoration:none}
+.socials a:hover{background:var(--sun);color:#10283a;border-color:var(--sun)}
+
+/* the memorable thing: arch portrait with colour dashes */
+.portrait{position:relative;justify-self:center;width:min(100%,280px)}
+.portrait img{display:block;width:100%;aspect-ratio:9/10;object-fit:cover;object-position:50% 20%;border-radius:999px 999px 24px 24px;background:var(--aqua);border:6px solid var(--card);box-shadow:14px 14px 0 var(--aqua)}
+.dash{position:absolute;width:56px;height:16px;border-radius:99px}
+.d1{background:var(--sun);top:14%;left:-34px;transform:rotate(-58deg)}
+.d2{background:var(--blue);top:30%;right:-38px;transform:rotate(-20deg)}
+.d3{background:var(--leaf);bottom:22%;left:-40px;transform:rotate(24deg)}
+.d4{background:var(--sun);bottom:8%;right:-30px;transform:rotate(64deg)}
+
+section{padding:80px 0}
+.about{background:var(--aqua)}
+.about .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:48px}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;letter-spacing:-.02em}
+.about p{margin:0 0 1.1em;max-width:62ch}
+.projects .lead{color:var(--muted);max-width:52ch;margin:14px 0 40px}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.card:nth-child(2){border-radius:20px 20px 20px 4px}
+.card:nth-child(3){border-radius:4px 20px 20px 20px}
+.card h3{font-size:1.5rem}
+.card p{margin:0;color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding:0;list-style:none}
+.card a{font-weight:600;text-underline-offset:4px}
+
+.contact{text-align:center}
+.contact p{max-width:46ch;margin:16px auto 0;color:var(--muted)}
+.contact .socials{justify-content:center}
+
+@media (max-width:760px){
+  .hero{padding:28px 0 48px}
+  .hero .wrap,.about .wrap{grid-template-columns:1fr;gap:36px}
+  .portrait{order:-1;width:min(58%,210px)}
+  section{padding:56px 0}
+  header .wrap{height:auto;padding-top:10px;padding-bottom:10px}
+}

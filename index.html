@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anvesha Dixit | Web Developer</title>
+<meta name="description" content="Anvesha Dixit's portfolio: about, projects and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#home" aria-label="Home">A</a>
+    <nav aria-label="Main">
+      <a class="px-3.5 py-1.5 rounded-full font-medium no-underline hover:bg-[var(--aqua)]" href="#home">Home</a>
+      <a class="px-3.5 py-1.5 rounded-full font-medium no-underline hover:bg-[var(--aqua)]" href="#about">About</a>
+      <a class="px-3.5 py-1.5 rounded-full font-medium no-underline hover:bg-[var(--aqua)]" href="#projects">Projects</a>
+      <a class="px-3.5 py-1.5 rounded-full font-medium no-underline hover:bg-[var(--aqua)]" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <h1>I'm Anvesha</h1>
+        <h3>Web developer, learning by building</h3>
+        <a class="btn" href="#contact">Contact me</a>
+        <ul class="socials"><li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></a></li><li><a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a></li><li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23Zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64Z"/></svg></a></li><li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li></ul>
+      </div>
+      <div class="portrait">
+        <img src="photo.jpg" alt="Portrait of Anvesha Dixit in a pale blue embroidered kurta" width="720" height="796">
+        <span class="dash d1"></span><span class="dash d2"></span><span class="dash d3"></span><span class="dash d4"></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <div>
+        <p>I'm a student in Bengaluru who enjoys turning ideas into working web pages. I'm learning HTML, CSS and Git, and I practise by building small things and fixing what breaks.</p>
+        <p>Outside of code, I help organise events at my college, which taught me a lot about working with people, deadlines and sponsors.</p>
+        <p>I'm looking for internships and projects where I can keep learning and ship real work.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="wrap">
+      <h2>My projects</h2>
+      <p class="lead">Things I've built while learning. Each one taught me something new.</p>
+      <div class="grid gap-6 grid-cols-[repeat(auto-fit,minmax(260px,1fr))]">
+        <article class="card">
+          <h3>This portfolio</h3>
+          <p>A responsive personal site written in plain HTML and CSS, with no JavaScript.</p>
+          <ul class="tags"><li class="px-3 py-0.5 rounded-full bg-[var(--aqua)] text-sm font-semibold">HTML</li><li class="px-3 py-0.5 rounded-full bg-[var(--aqua)] text-sm font-semibold">CSS</li></ul>
+          <a href="#">View project</a>
+        </article>
+        <article class="card">
+          <h3>CSS position practice</h3>
+          <p>Exercises on static, relative, absolute and fixed positioning, solved and explained.</p>
+          <ul class="tags"><li class="px-3 py-0.5 rounded-full bg-[var(--aqua)] text-sm font-semibold">CSS</li><li class="px-3 py-0.5 rounded-full bg-[var(--aqua)] text-sm font-semibold">Layout</li></ul>
+          <a href="#">View project</a>
+        </article>
+        <article class="card">
+          <h3>Learning C++</h3>
+          <p>Trying to solve tough DSA problems</p>
+          <ul class="tags"><li class="px-3 py-0.5 rounded-full bg-[var(--aqua)] text-sm font-semibold">Tag</li><li class="px-3 py-0.5 rounded-full bg-[var(--aqua)] text-sm font-semibold">Tag</li></ul>
+          <a href="#">View project</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Let's get in touch</h2>
+      <p>My inbox is open. Send me a question, an opportunity, or just say hi, and I'll reply as soon as I can.</p>
+      <a class="btn" href="mailto:you@example.com">Email me</a>
+      <ul class="socials"><li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></a></li><li><a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg></a></li><li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23Zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64Z"/></svg></a></li><li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></li></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="py-7 text-center text-sm text-[var(--muted)] border-t-2 border-[var(--aqua)]">
+  <div class="wrap">Copyright © 2026 Anvesha Dixit. All rights reserved.</div>
+</footer>
+</body>
+</html>
